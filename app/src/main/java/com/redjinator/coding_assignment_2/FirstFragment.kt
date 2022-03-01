@@ -9,7 +9,10 @@ import androidx.navigation.fragment.findNavController
 import com.redjinator.coding_assignment_2.databinding.FragmentFirstBinding
 
 /**
- * A simple [Fragment] subclass as the default destination in the navigation.
+ * Author: Reginald McPherson
+ * Student: n0136897
+ * Course: DGL-114
+ * Purpose: First fragment is going to be a title screen to start a card matching game.
  */
 class FirstFragment : Fragment() {
 

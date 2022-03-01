@@ -9,7 +9,10 @@ import androidx.navigation.fragment.findNavController
 import com.redjinator.coding_assignment_2.databinding.FragmentSecondBinding
 
 /**
- * A simple [Fragment] subclass as the second destination in the navigation.
+ * Author: Reginald McPherson
+ * Student: n0136897
+ * Course: DGL-114
+ * Purpose: Second fragment is going to hold my card matching game which will be accessed via the first fragment.
  */
 class SecondFragment : Fragment() {
 

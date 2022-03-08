@@ -12,6 +12,7 @@ class ProfileActivity : AppCompatActivity() {
 
         if(actionBar != null) {
             actionBar.title = "Avocado"
+            actionBar.setDisplayHomeAsUpEnabled(true)
         }
     }
 }

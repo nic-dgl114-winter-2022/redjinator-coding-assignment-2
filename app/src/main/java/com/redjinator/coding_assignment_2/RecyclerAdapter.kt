@@ -19,7 +19,7 @@ class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>(){
     private var titles  = arrayOf("Avocado", "Gary Goodspeed", "Quinn", "Mooncake", "Kvn", "Final Space")
     private var details = arrayOf("Friend mode, Engaged!", "This.. is the real raw Gary!", "Quinn detail/quote", "Choh-ka-dee Pok!", "Your deep space insanity avoidance robot", "The funniest show, Ever!")
     private var images  = arrayOf(R.drawable.avacado, R.drawable.gary, R.drawable.quinn, R.drawable.mooncake, R.drawable.kvn, R.drawable.cardback)
-    private var buttons = arrayOf("")
+    private var profiles = arrayOf(ProfileActivity::class.java, ProfileActivity2::class.java, ProfileActivity::class.java, ProfileActivity2::class.java, ProfileActivity::class.java, ProfileActivity2::class.java, )
 
 
 
@@ -41,17 +41,19 @@ class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>(){
 
 
 
+
         // Add button text
         holder.itemButton.text = "Show Profile for"
 
         // setOnClickListener
         holder.itemButton.setOnClickListener {
 
+
             Log.d(TAG, "itemButton ${holder.itemTitle.text} was clicked")
 
             // Required to call startActivity
             val context = holder.itemView.context
-            val intent = Intent(context, ProfileActivity::class.java)
+            val intent = Intent(context, profiles[position])
             context.startActivity(intent)
 
 

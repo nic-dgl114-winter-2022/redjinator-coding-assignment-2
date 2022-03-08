@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Codingassignment2">
         <activity
-            android:name=".ProfileActivity"
+            android:name=".ProfileActivity2" android:parentActivityName=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity" android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

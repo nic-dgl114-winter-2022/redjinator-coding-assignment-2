@@ -12,6 +12,7 @@ import com.redjinator.coding_assignment_2.R
  Date: March 1, 2022
   */
 
+private val TAG = "MainActivity"
 
 class MainActivity : AppCompatActivity() {
 

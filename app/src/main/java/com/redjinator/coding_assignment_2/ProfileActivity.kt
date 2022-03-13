@@ -3,7 +3,11 @@ package com.redjinator.coding_assignment_2
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
+private val TAG = "ProfileActivity.kt"
+
 class ProfileActivity : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
@@ -14,5 +18,10 @@ class ProfileActivity : AppCompatActivity() {
             actionBar.title = "Avocado"
             actionBar.setDisplayHomeAsUpEnabled(true)
         }
+
+        // -------------
+
+
+
     }
 }

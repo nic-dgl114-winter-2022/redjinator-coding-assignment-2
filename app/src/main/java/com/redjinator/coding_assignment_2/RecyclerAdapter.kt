@@ -12,9 +12,9 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 
-class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>(){
+private val TAG = "RecyclerAdapter"
 
-    private val TAG = "RecyclerAdapter"
+class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>(){
 
     private var titles  = arrayOf("Avocado", "Gary Goodspeed", "Quinn", "Mooncake", "Kvn", "Final Space")
     private var details = arrayOf("Friend mode, Engaged!", "This.. is the real raw Gary!", "Quinn detail/quote", "Choh-ka-dee Pok!", "Your deep space insanity avoidance robot", "The funniest show, Ever!")

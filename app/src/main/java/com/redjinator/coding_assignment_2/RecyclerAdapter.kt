@@ -20,19 +20,14 @@ class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>(){
     private var images  = arrayOf(R.drawable.avacado, R.drawable.gary, R.drawable.quinn, R.drawable.mooncake, R.drawable.kvn, R.drawable.cardback)
     private var activities = arrayOf(AvocadoActivity::class.java, GaryActivity::class.java,AvocadoActivity::class.java,GaryActivity::class.java,AvocadoActivity::class.java,GaryActivity::class.java)
 
-
-
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerAdapter.ViewHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.list_items, parent, false)     // Layout Inflater
         return ViewHolder(v)
     }
 
-
     override fun getItemCount(): Int {
         return titles.size
     }
-
 
     override fun onBindViewHolder(holder: RecyclerAdapter.ViewHolder, position: Int) {
         holder.itemTitle.text = titles[position]
@@ -47,7 +42,7 @@ class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>(){
 
             Log.d(TAG, "itemButton ${holder.itemTitle.text} was clicked")
 
-            // Required to call startActivity
+            // Required for calling startActivity
             val context = holder.itemView.context
             val intent = Intent(context, activities[position])
             context.startActivity(intent)

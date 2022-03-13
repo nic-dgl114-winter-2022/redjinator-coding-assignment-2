@@ -14,6 +14,13 @@ The app's purpose is to display my basic understanding of the concepts required,
 ### Questions I have unanswered
 - Why on GaryActivity the back button "on the actionBar" wouldn't work when I had actionBar.setDisplayHomeAsUpEnabled(true), this is actually why I created the current back buttons you see below the character_images on the activities "GaryActivity & AvocadoActivity". I know I could just write and abstract class with my required methods I want implemented for my kotlin classes but I haven't gotten to seeing how I'll manage it with the xml layout files. Maybe a recyclerview with full screen sized views for the profiles? I'm not sure yet.
 
+## Example Features
+- RecyclerView
+- Fragments
+- Bottom nav bar
+- Explicit intents
+- It Runs!!! I mean... it is currently functioning.
+
 
 ## Project Files
 Below is a list of the primary project files that I created and/or modified from the templates provided in Android Studio and information I learned by watching YouTube https://www.youtube.com/c/CodeWithMazn, particularly when creating the bottom navigation and associated fragments.

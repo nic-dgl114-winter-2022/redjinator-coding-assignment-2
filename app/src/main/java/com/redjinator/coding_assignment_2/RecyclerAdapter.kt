@@ -44,7 +44,7 @@ class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>(){
 
 
         // Add button text
-        holder.itemButton.text = "Show Profile for"
+        holder.itemButton.text = "Show Profile"
 
         // setOnClickListener
         holder.itemButton.setOnClickListener {

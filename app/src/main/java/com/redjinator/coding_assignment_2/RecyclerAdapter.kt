@@ -12,6 +12,7 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.redjinator.coding_assignment_2.databinding.ActivityMainBinding
+import com.redjinator.coding_assignment_2.fragments.ProfileFragment
 
 private val TAG = "RecyclerAdapter"
 
@@ -20,6 +21,7 @@ class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>(){
     private var titles  = arrayOf("Avocado", "Gary Goodspeed", "Quinn", "Mooncake", "Kvn", "Final Space")
     private var details = arrayOf("Friend mode, Engaged!", "This.. is the real raw Gary!", "Quinn detail/quote", "Choh-ka-dee Pok!", "Your deep space insanity avoidance robot", "The funniest show, Ever!")
     private var images  = arrayOf(R.drawable.avacado, R.drawable.gary, R.drawable.quinn, R.drawable.mooncake, R.drawable.kvn, R.drawable.cardback)
+    private var activities = arrayOf(MainActivity::class.java, GaryActivity::class.java,GaryActivity::class.java,GaryActivity::class.java,GaryActivity::class.java,GaryActivity::class.java)
 
 
 
@@ -40,25 +42,18 @@ class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>(){
         holder.itemDetail.text = details[position]
         holder.itemImage.setImageResource(images[position])
 
-
-
-
         // Add button text
         holder.itemButton.text = "Show Profile"
 
         // setOnClickListener
         holder.itemButton.setOnClickListener {
 
-
             Log.d(TAG, "itemButton ${holder.itemTitle.text} was clicked")
 
             // Required to call startActivity
             val context = holder.itemView.context
-            val intent = Intent(context, ProfileActivity::class.java)
+            val intent = Intent(context, activities[position])
             context.startActivity(intent)
-
-
-
         }
 
     }
@@ -74,8 +69,9 @@ class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>(){
             itemTitle = itemView.findViewById(R.id.item_title)
             itemDetail = itemView.findViewById(R.id.item_detail)
             itemButton = itemView.findViewById(R.id.item_button)
-
         }
+
+
     }
 
 }

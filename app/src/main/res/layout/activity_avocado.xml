@@ -4,22 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GaryActivity">
+    tools:context=".AvocadoActivity">
 
     <ImageView
         android:id="@+id/character_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/avocadoDesc"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gary"
+        app:srcCompat="@drawable/avacado"
         tools:layout_editor_absoluteX="137dp" />
 
     <Button
-        android:id="@+id/gary_button"
+        android:id="@+id/avocado_button"
         android:layout_width="match_parent"
-        android:layout_height="39dp"
+        android:layout_height="48dp"
         android:layout_marginHorizontal="84dp"
+        android:text="@string/return_to_list"
         app:layout_constraintTop_toBottomOf="@+id/character_image"
-        android:text="Return to List"
-        />
+        tools:layout_editor_absoluteX="84dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

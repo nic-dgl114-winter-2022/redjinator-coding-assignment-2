@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Codingassignment2">
         <activity
+            android:name=".AvocadoActivity"
+            android:exported="false" />
+        <activity
             android:name=".GaryActivity"
             android:exported="false" />
         <activity

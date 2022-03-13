@@ -4,21 +4,17 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
-import android.widget.Button
-import com.redjinator.coding_assignment_2.databinding.ActivityGaryBinding
-import com.redjinator.coding_assignment_2.databinding.ActivityMainBinding
-import java.security.AccessController.getContext
+import com.redjinator.coding_assignment_2.databinding.ActivityAvocadoBinding
 
 private val TAG = "GaryActivity.kt"
 
-class GaryActivity : AppCompatActivity() {
+class AvocadoActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityGaryBinding
+    private lateinit var binding: ActivityAvocadoBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityGaryBinding.inflate(layoutInflater)
+        binding = ActivityAvocadoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
 
@@ -30,14 +26,14 @@ class GaryActivity : AppCompatActivity() {
         }
 
         // Profile back button
-        var garyBackButton = binding.garyButton
-        garyBackButton.text = "Back"
+        var avocadoBackButton = binding.avocadoButton
+        avocadoBackButton.text = "Back"
 
-        garyBackButton.setOnClickListener {
+        avocadoBackButton.setOnClickListener {
             Log.d(TAG, "gary's back button was clicked")
 
             // Required to call startActivity
-            val context = garyBackButton.context
+            val context = avocadoBackButton.context
             val intent = Intent(context, MainActivity::class.java)
             context.startActivity(intent)
         }

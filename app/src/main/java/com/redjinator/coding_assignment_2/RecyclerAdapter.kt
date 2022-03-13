@@ -21,7 +21,7 @@ class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>(){
     private var titles  = arrayOf("Avocado", "Gary Goodspeed", "Quinn", "Mooncake", "Kvn", "Final Space")
     private var details = arrayOf("Friend mode, Engaged!", "This.. is the real raw Gary!", "Quinn detail/quote", "Choh-ka-dee Pok!", "Your deep space insanity avoidance robot", "The funniest show, Ever!")
     private var images  = arrayOf(R.drawable.avacado, R.drawable.gary, R.drawable.quinn, R.drawable.mooncake, R.drawable.kvn, R.drawable.cardback)
-    private var activities = arrayOf(MainActivity::class.java, GaryActivity::class.java,GaryActivity::class.java,GaryActivity::class.java,GaryActivity::class.java,GaryActivity::class.java)
+    private var activities = arrayOf(AvocadoActivity::class.java, GaryActivity::class.java,AvocadoActivity::class.java,GaryActivity::class.java,AvocadoActivity::class.java,GaryActivity::class.java)
 
 
 

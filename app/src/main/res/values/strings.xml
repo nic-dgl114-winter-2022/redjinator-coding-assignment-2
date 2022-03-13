@@ -3,4 +3,6 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="character_fragment">Character Fragment</string>
+    <string name="return_to_list">Return to List</string>
+    <string name="avocadoDesc">Too Much? Or just enough...</string> />
 </resources>

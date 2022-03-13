@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.redjinator.coding_assignment_2.R
+import com.redjinator.coding_assignment_2.databinding.ActivityMainBinding
 
 /**
  Student: Reginald McPherson
@@ -16,14 +17,20 @@ private val TAG = "MainActivity"
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var binding: ActivityMainBinding
+
     private var layoutManager: RecyclerView.LayoutManager? = null
     private var adapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>? = null
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
 
-        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
+        setContentView(binding.root)
+
+        val recyclerView = binding.recyclerView
+
 
         layoutManager = LinearLayoutManager(this)
         recyclerView.layoutManager = layoutManager

@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import com.redjinator.coding_assignment_2.databinding.ActivityAvocadoBinding
 
-private val TAG = "GaryActivity.kt"
+private val TAG = "AvocadoActivity.kt"
 
 class AvocadoActivity : AppCompatActivity() {
 

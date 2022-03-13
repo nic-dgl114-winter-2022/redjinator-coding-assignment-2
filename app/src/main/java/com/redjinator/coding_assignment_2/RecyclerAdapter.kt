@@ -8,11 +8,8 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
-import com.redjinator.coding_assignment_2.databinding.ActivityMainBinding
-import com.redjinator.coding_assignment_2.fragments.ProfileFragment
+
 
 private val TAG = "RecyclerAdapter"
 

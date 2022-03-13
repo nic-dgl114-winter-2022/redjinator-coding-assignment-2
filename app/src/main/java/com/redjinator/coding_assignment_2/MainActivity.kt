@@ -32,8 +32,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Bottom Navigation Bar
-        var bottom_navigation = binding.bottomNavigation
-        bottom_navigation.setOnNavigationItemSelectedListener {
+        val bottomNavigation = binding.bottomNavigation
+        bottomNavigation.setOnNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.ic_profile -> replaceFragment(profileFragment)
                 R.id.ic_main_list -> replaceFragment(infoFragment)

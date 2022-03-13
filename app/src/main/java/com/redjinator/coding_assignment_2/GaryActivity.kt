@@ -4,11 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
-import android.widget.Button
 import com.redjinator.coding_assignment_2.databinding.ActivityGaryBinding
-import com.redjinator.coding_assignment_2.databinding.ActivityMainBinding
-import java.security.AccessController.getContext
+
 
 private val TAG = "GaryActivity.kt"
 

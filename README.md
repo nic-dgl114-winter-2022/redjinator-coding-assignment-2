@@ -39,3 +39,7 @@ Below is a list of the primary project files that I created and/or modified from
 - menu.xml
 - strings.xml
 
+## Under Construction
+- Function descriptions
+- Object descriptions
+

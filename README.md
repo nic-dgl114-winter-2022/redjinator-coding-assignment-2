@@ -1,4 +1,6 @@
-# redjinator-coding-assignment-2
+# Final Space Soundboard App
+Course: DGL-114
+redjinator-coding-assignment-2
 
 
 ## Project Description

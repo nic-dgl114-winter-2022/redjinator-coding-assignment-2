@@ -7,7 +7,7 @@ import com.redjinator.coding_assignment_2.databinding.ActivityMainBinding
 import com.redjinator.coding_assignment_2.fragments.ProfileFragment
 import com.redjinator.coding_assignment_2.fragments.ListFragment
 
-private val TAG = "MainActivity.kt"
+private const val TAG = "MainActivity.kt"
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // load the initial fragment
         replaceFragment(profileFragment)
 
         // Action Bar Title
@@ -40,7 +41,6 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
-
     }
 
     private fun replaceFragment(fragment: Fragment) {

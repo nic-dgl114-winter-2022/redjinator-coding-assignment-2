@@ -26,8 +26,8 @@ class AvocadoActivity : AppCompatActivity() {
         }
 
         // Profile back button
-        var avocadoBackButton = binding.avocadoButton
-        avocadoBackButton.text = "Back"
+        var avocadoBackButton = binding.avocadoButton // var or val...?
+        avocadoBackButton.text = "Back" //Extract these!
 
         avocadoBackButton.setOnClickListener {
             Log.d(TAG, "gary's back button was clicked")

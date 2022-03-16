@@ -13,12 +13,8 @@ import com.redjinator.coding_assignment_2.RecyclerAdapter
 
 
 class ProfileFragment : Fragment() {
-
-    private var layoutManager: RecyclerView.LayoutManager? = null
-    private var adapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>? = null
-
-
-
+//  You don't need either of these properties - layoutManager and adapater below need not be declared
+//  directly since they are properties of the recyclerView
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
@@ -28,9 +24,10 @@ class ProfileFragment : Fragment() {
 
     override fun onViewCreated(itemView: View, savedInstanceState: Bundle?) {
         super.onViewCreated(itemView, savedInstanceState)
-        val recycler_view = itemView.findViewById<RecyclerView>(R.id.fragment_recycler_view)
+        // recyclerView is idiomatic in Kotlin. We use recycler_view for ID names in XML
+        val recyclerView = itemView.findViewById<RecyclerView>(R.id.fragment_recycler_view)
 
-        recycler_view.apply {
+        recyclerView.apply {
             // set a LinearLayoutManager to handle RecyclerView behavior
             layoutManager = LinearLayoutManager(activity)
 

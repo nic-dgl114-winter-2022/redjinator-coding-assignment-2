@@ -20,10 +20,12 @@ class GaryActivity : AppCompatActivity() {
 
 
         // Action Bar Title
-        val actionBar = supportActionBar
-        if(actionBar != null) {
-            actionBar.title = "Profile"
-            actionBar.setDisplayHomeAsUpEnabled(false)
+//        val actionBar = supportActionBar  //Renaming this is unnecessary.
+//        This code is fine, but you missed explicitly stating who the parent is in the Android
+//        Manifest file. See changes there.
+        if(supportActionBar != null) {
+            supportActionBar?.title = "Profile"
+            supportActionBar?.setDisplayHomeAsUpEnabled(true)
         }
 
         // Profile back button

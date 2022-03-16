@@ -7,7 +7,8 @@ import com.redjinator.coding_assignment_2.databinding.ActivityMainBinding
 import com.redjinator.coding_assignment_2.fragments.ProfileFragment
 import com.redjinator.coding_assignment_2.fragments.ListFragment
 
-private const val TAG = "MainActivity.kt"
+// Leftover? There was a warning for this - either remove it, or use it, but don't leave it in if
+//its generating warnings
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,13 +29,14 @@ class MainActivity : AppCompatActivity() {
         // Action Bar Title
         val actionBar = supportActionBar
         if(actionBar != null) {
-            actionBar.title = "Profile"
+            actionBar.title = getString(R.string.profile) //Extract all string resources!
             actionBar.setDisplayHomeAsUpEnabled(true)
         }
 
         // Bottom Navigation Bar
         val bottomNavigation = binding.bottomNavigation
-        bottomNavigation.setOnNavigationItemSelectedListener {
+//      I removed the deprecated method call. You can use setOnItemSelectedListener instead.
+        bottomNavigation.setOnItemSelectedListener {
             when(it.itemId){
                 R.id.ic_profile -> replaceFragment(profileFragment)
                 R.id.ic_main_list -> replaceFragment(infoFragment)
@@ -44,7 +46,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun replaceFragment(fragment: Fragment) {
-        if(fragment !=null){
+        if(fragment !=null){ //Pay attention to these warnings! They should be addressed.
             val transaction = supportFragmentManager.beginTransaction()
             transaction.replace(R.id.profile_fragment_container, fragment)
             transaction.commit()
